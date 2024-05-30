@@ -65,6 +65,13 @@ catch {
     Write-Error "Failed to install Oh My Posh. Error: $_"
 }
 
+# Fastfetch Install
+try {
+    winget install fastfetch
+catch {
+    Write-Error "Failed to install fastfetch. Error: $_"
+}
+
 # Font Install
 try {
     [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Drawing")
