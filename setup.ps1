@@ -68,6 +68,7 @@ catch {
 # Fastfetch Install
 try {
     winget install fastfetch
+}
 catch {
     Write-Error "Failed to install fastfetch. Error: $_"
 }
